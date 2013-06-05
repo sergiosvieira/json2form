@@ -9,11 +9,15 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "J2FCoreData.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+
+    [J2FCoreData loadFromJSON:@"sample.json"];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];

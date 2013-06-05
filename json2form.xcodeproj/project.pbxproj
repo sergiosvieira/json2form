@@ -18,6 +18,15 @@
 		3A30A9ED175FCBC000C1CD98 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A30A9EC175FCBC000C1CD98 /* Default-568h@2x.png */; };
 		3A30A9F0175FCBC000C1CD98 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30A9EF175FCBC000C1CD98 /* ViewController.m */; };
 		3A30A9F3175FCBC000C1CD98 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A30A9F1175FCBC000C1CD98 /* ViewController.xib */; };
+		3A30A9FF175FCCD700C1CD98 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A30A9FB175FCCD700C1CD98 /* CHANGELOG.md */; };
+		3A30AA00175FCCD700C1CD98 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30A9FD175FCCD700C1CD98 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3A30AA01175FCCD700C1CD98 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A30A9FE175FCCD700C1CD98 /* README.md */; };
+		3A30AA08175FCD6400C1CD98 /* J2FController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA07175FCD6400C1CD98 /* J2FController.m */; };
+		3A30AA0F175FD5DD00C1CD98 /* J2FModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA0E175FD5DD00C1CD98 /* J2FModel.m */; };
+		3A30AA12175FD63600C1CD98 /* J2FCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA11175FD63600C1CD98 /* J2FCoreData.m */; };
+		3A30AA14175FDADB00C1CD98 /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A30AA13175FDADA00C1CD98 /* assets.bundle */; };
+		3A30AA19175FE06800C1CD98 /* J2FTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA18175FE06800C1CD98 /* J2FTableController.m */; };
+		3A30AA1D175FE68400C1CD98 /* J2FConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA1C175FE68400C1CD98 /* J2FConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +46,21 @@
 		3A30A9EE175FCBC000C1CD98 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3A30A9EF175FCBC000C1CD98 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A30A9F2175FCBC000C1CD98 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		3A30A9FB175FCCD700C1CD98 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		3A30A9FC175FCCD700C1CD98 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		3A30A9FD175FCCD700C1CD98 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		3A30A9FE175FCCD700C1CD98 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		3A30AA06175FCD6400C1CD98 /* J2FController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FController.h; path = lib/controller/J2FController.h; sourceTree = "<group>"; };
+		3A30AA07175FCD6400C1CD98 /* J2FController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FController.m; path = lib/controller/J2FController.m; sourceTree = "<group>"; };
+		3A30AA0D175FD5DD00C1CD98 /* J2FModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FModel.h; path = lib/model/J2FModel.h; sourceTree = "<group>"; };
+		3A30AA0E175FD5DD00C1CD98 /* J2FModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FModel.m; path = lib/model/J2FModel.m; sourceTree = "<group>"; };
+		3A30AA10175FD63600C1CD98 /* J2FCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FCoreData.h; path = lib/J2FCoreData.h; sourceTree = "<group>"; };
+		3A30AA11175FD63600C1CD98 /* J2FCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FCoreData.m; path = lib/J2FCoreData.m; sourceTree = "<group>"; };
+		3A30AA13175FDADA00C1CD98 /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
+		3A30AA17175FE06800C1CD98 /* J2FTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FTableController.h; path = lib/controller/J2FTableController.h; sourceTree = "<group>"; };
+		3A30AA18175FE06800C1CD98 /* J2FTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FTableController.m; path = lib/controller/J2FTableController.m; sourceTree = "<group>"; };
+		3A30AA1B175FE68300C1CD98 /* J2FConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FConstants.h; path = lib/J2FConstants.h; sourceTree = "<group>"; };
+		3A30AA1C175FE68400C1CD98 /* J2FConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FConstants.m; path = lib/J2FConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +107,15 @@
 		3A30A9DC175FCBC000C1CD98 /* json2form */ = {
 			isa = PBXGroup;
 			children = (
+				3A30AA13175FDADA00C1CD98 /* assets.bundle */,
+				3A30A9F9175FCCC600C1CD98 /* 3thparty */,
 				3A30A9E5175FCBC000C1CD98 /* AppDelegate.h */,
 				3A30A9E6175FCBC000C1CD98 /* AppDelegate.m */,
+				3A30AA02175FCCE300C1CD98 /* lib */,
+				3A30A9DD175FCBC000C1CD98 /* Supporting Files */,
 				3A30A9EE175FCBC000C1CD98 /* ViewController.h */,
 				3A30A9EF175FCBC000C1CD98 /* ViewController.m */,
 				3A30A9F1175FCBC000C1CD98 /* ViewController.xib */,
-				3A30A9DD175FCBC000C1CD98 /* Supporting Files */,
 			);
 			path = json2form;
 			sourceTree = "<group>";
@@ -105,6 +132,83 @@
 				3A30A9EC175FCBC000C1CD98 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A30A9F9175FCCC600C1CD98 /* 3thparty */ = {
+			isa = PBXGroup;
+			children = (
+				3A30A9FA175FCCD700C1CD98 /* jsonkit */,
+			);
+			name = 3thparty;
+			sourceTree = "<group>";
+		};
+		3A30A9FA175FCCD700C1CD98 /* jsonkit */ = {
+			isa = PBXGroup;
+			children = (
+				3A30A9FB175FCCD700C1CD98 /* CHANGELOG.md */,
+				3A30A9FC175FCCD700C1CD98 /* JSONKit.h */,
+				3A30A9FD175FCCD700C1CD98 /* JSONKit.m */,
+				3A30A9FE175FCCD700C1CD98 /* README.md */,
+			);
+			name = jsonkit;
+			path = 3thparty/jsonkit;
+			sourceTree = SOURCE_ROOT;
+		};
+		3A30AA02175FCCE300C1CD98 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3A30AA1B175FE68300C1CD98 /* J2FConstants.h */,
+				3A30AA10175FD63600C1CD98 /* J2FCoreData.h */,
+				3A30AA1C175FE68400C1CD98 /* J2FConstants.m */,
+				3A30AA11175FD63600C1CD98 /* J2FCoreData.m */,
+				3A30AA0B175FD58500C1CD98 /* category */,
+				3A30AA0C175FD59800C1CD98 /* jf */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		3A30AA03175FCCE700C1CD98 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3A30AA0D175FD5DD00C1CD98 /* J2FModel.h */,
+				3A30AA0E175FD5DD00C1CD98 /* J2FModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		3A30AA04175FCCED00C1CD98 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		3A30AA05175FCCF200C1CD98 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A30AA06175FCD6400C1CD98 /* J2FController.h */,
+				3A30AA07175FCD6400C1CD98 /* J2FController.m */,
+				3A30AA17175FE06800C1CD98 /* J2FTableController.h */,
+				3A30AA18175FE06800C1CD98 /* J2FTableController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		3A30AA0B175FD58500C1CD98 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		3A30AA0C175FD59800C1CD98 /* jf */ = {
+			isa = PBXGroup;
+			children = (
+				3A30AA05175FCCF200C1CD98 /* controller */,
+				3A30AA04175FCCED00C1CD98 /* view */,
+				3A30AA03175FCCE700C1CD98 /* model */,
+			);
+			name = jf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +267,9 @@
 				3A30A9EB175FCBC000C1CD98 /* Default@2x.png in Resources */,
 				3A30A9ED175FCBC000C1CD98 /* Default-568h@2x.png in Resources */,
 				3A30A9F3175FCBC000C1CD98 /* ViewController.xib in Resources */,
+				3A30A9FF175FCCD700C1CD98 /* CHANGELOG.md in Resources */,
+				3A30AA01175FCCD700C1CD98 /* README.md in Resources */,
+				3A30AA14175FDADB00C1CD98 /* assets.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +283,12 @@
 				3A30A9E3175FCBC000C1CD98 /* main.m in Sources */,
 				3A30A9E7175FCBC000C1CD98 /* AppDelegate.m in Sources */,
 				3A30A9F0175FCBC000C1CD98 /* ViewController.m in Sources */,
+				3A30AA00175FCCD700C1CD98 /* JSONKit.m in Sources */,
+				3A30AA08175FCD6400C1CD98 /* J2FController.m in Sources */,
+				3A30AA0F175FD5DD00C1CD98 /* J2FModel.m in Sources */,
+				3A30AA12175FD63600C1CD98 /* J2FCoreData.m in Sources */,
+				3A30AA19175FE06800C1CD98 /* J2FTableController.m in Sources */,
+				3A30AA1D175FE68400C1CD98 /* J2FConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

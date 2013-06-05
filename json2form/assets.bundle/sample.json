@@ -1,0 +1,45 @@
+{
+    "Section 01": {
+        "field01": {
+            "type": "kTextType",
+            "caption": "NAME",
+            "placeholder": "input yout name here",
+            "defaultvalue": "my field 01",
+            "keyboardstyle": "kDefaultKeyboard"
+        },
+        "field02": {
+            "type": "kDateType",
+            "caption": "DATE",
+            "placeholder": "input your birthday here"
+        },
+        "field03": {
+            "type": "kSelectionType",
+            "caption": "SELECTION",
+            "placeholder": "input your gender here",
+            "values": [
+                "Male",
+                "Female"
+            ]
+        },
+        "field04": {
+            "type": "kTextIconType",
+            "caption": "FIRST_NAME",
+            "placeholder": "input your first name here",
+            "defaultvalue": "my field 01"
+        },
+        "field05": {
+            "type": "kIconType",
+            "caption": "LAST_NAME",
+            "placeholder": "input your last name here",
+            "defaultvalue": "my field 01"
+        },
+        "button01": {
+            "caption": "CLICK_HERE",
+            "type": "kButtonType"
+        },
+        "label01": {
+            "caption": "MESSAGE_ERROR",
+            "type": "kLabelType"
+        }
+    }
+}
