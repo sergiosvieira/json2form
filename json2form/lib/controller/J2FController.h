@@ -2,12 +2,13 @@
 //  J2FController.h
 //  json2form
 //
-//  Created by Paulo Pinheiro on 6/5/13.
+//  Created by Sérgio Vieira on 6/5/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
+@class J2FTableController, J2FModel;
 @protocol J2FControllerProtocol <NSObject>
 
 @optional
@@ -17,7 +18,10 @@
 - (void)performConfigureCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath;
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
-@property (strong, nonatomic) UITableViewController *tableController;
+- (UITableView *)tableView;
+
+@property (strong, nonatomic) J2FTableController *tableController;
+@property (strong, nonatomic) J2FModel *model;
 
 @end
 

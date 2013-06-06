@@ -2,7 +2,7 @@
 //  J2FConstants.h
 //  json2form
 //
-//  Created by Paulo Pinheiro on 6/5/13.
+//  Created by Sérgio Vieira on 6/5/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
@@ -18,3 +18,6 @@ typedef NS_ENUM(NSInteger, kFieldType)
     kButtonType,
     kLabelType
 };
+
+// app related constants
+FOUNDATION_EXPORT NSString *const kDefaultCellIdentifier;

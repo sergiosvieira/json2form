@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DE5311D17602B6B00B3B18E /* J2FMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5311C17602B6A00B3B18E /* J2FMessages.m */; };
 		3A30A9D7175FCBC000C1CD98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9D6175FCBC000C1CD98 /* UIKit.framework */; };
 		3A30A9D9175FCBC000C1CD98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9D8175FCBC000C1CD98 /* Foundation.framework */; };
 		3A30A9DB175FCBC000C1CD98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9DA175FCBC000C1CD98 /* CoreGraphics.framework */; };
@@ -30,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DE5311A176026B600B3B18E /* J2F.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = J2F.h; path = lib/J2F.h; sourceTree = "<group>"; };
+		0DE5311B17602B6A00B3B18E /* J2FMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FMessages.h; path = lib/J2FMessages.h; sourceTree = "<group>"; };
+		0DE5311C17602B6A00B3B18E /* J2FMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FMessages.m; path = lib/J2FMessages.m; sourceTree = "<group>"; };
 		3A30A9D3175FCBC000C1CD98 /* json2form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = json2form.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A30A9D6175FCBC000C1CD98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A30A9D8175FCBC000C1CD98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -163,6 +167,9 @@
 				3A30AA11175FD63600C1CD98 /* J2FCoreData.m */,
 				3A30AA0B175FD58500C1CD98 /* category */,
 				3A30AA0C175FD59800C1CD98 /* jf */,
+				0DE5311A176026B600B3B18E /* J2F.h */,
+				0DE5311B17602B6A00B3B18E /* J2FMessages.h */,
+				0DE5311C17602B6A00B3B18E /* J2FMessages.m */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -289,6 +296,7 @@
 				3A30AA12175FD63600C1CD98 /* J2FCoreData.m in Sources */,
 				3A30AA19175FE06800C1CD98 /* J2FTableController.m in Sources */,
 				3A30AA1D175FE68400C1CD98 /* J2FConstants.m in Sources */,
+				0DE5311D17602B6B00B3B18E /* J2FMessages.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +419,7 @@
 				3A30A9F8175FCBC000C1CD98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

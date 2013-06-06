@@ -2,7 +2,7 @@
 //  J2FCoreData.m
 //  json2form
 //
-//  Created by Paulo Pinheiro on 6/5/13.
+//  Created by Sérgio Vieira on 6/5/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
@@ -15,10 +15,10 @@
 + (NSDictionary *)loadFromJSON:(NSString *)filename
 {
     NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"assets" ofType:@"bundle"];
-    NSString *imageName = [[NSBundle bundleWithPath:bundlePath] pathForResource:@"sample" ofType:@"json"];
+    NSString *imageName = [[NSBundle bundleWithPath:bundlePath] pathForResource:filename ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:imageName];
     
-    NSAssert(jsonData, @"nil object");
+    NSAssert(jsonData, [J2FMessages nilObject]);
     
     JSONDecoder *decoder = [[JSONDecoder alloc] initWithParseOptions:JKParseOptionNone];
     NSError *error = nil;
@@ -33,6 +33,17 @@
     NSAssert([self isValidJ2FJSON:result], @"invalid J2FJSON format.");
     
     return result;
+}
+
+/**
+    @description: return a array with sections titles
+    @in: a valid F2FJSON dictionary
+**/
++ (NSArray *)sections:(NSDictionary *)dict
+{
+    NSAssert(dict, [J2FMessages nilObject]);
+    
+    return dict.allKeys;
 }
 
 #pragma mark - Private Methods

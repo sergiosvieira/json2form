@@ -2,25 +2,21 @@
 //  AppDelegate.m
 //  json2form
 //
-//  Created by Paulo Pinheiro on 6/5/13.
+//  Created by Sérgio Vieira on 6/5/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
 #import "ViewController.h"
-#import "J2FCoreData.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
-    [J2FCoreData loadFromJSON:@"sample.json"];
-
+    self.viewController = [[ViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

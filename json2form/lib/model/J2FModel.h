@@ -2,7 +2,7 @@
 //  J2FModel.h
 //  json2form
 //
-//  Created by Paulo Pinheiro on 6/5/13.
+//  Created by Sérgio Vieira on 6/5/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
@@ -12,8 +12,11 @@
 
 @optional
 
+@property (strong, nonatomic) NSArray *sections;
+@property (strong, nonatomic) NSDictionary *results;
+
 @end
 
-@interface J2FModel : NSObject
+@interface J2FModel : NSObject<J2FModelProtocol>
 
 @end
