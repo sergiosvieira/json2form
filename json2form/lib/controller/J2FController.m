@@ -88,6 +88,11 @@
     return self.tableController.tableView;
 }
 
+- (NSString *)titleForHeaderInSection:(NSInteger)section
+{
+    return self.model.sections[section];
+}
+
 #pragma mark - Private Methods
 - (void)loading
 {

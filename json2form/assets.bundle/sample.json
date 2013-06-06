@@ -21,25 +21,12 @@
                 "Female"
             ]
         },
-        "field04": {
-            "type": "kTextIconType",
-            "caption": "FIRST_NAME",
-            "placeholder": "input your first name here",
-            "defaultvalue": "my field 01"
-        },
         "field05": {
             "type": "kIconType",
-            "caption": "LAST_NAME",
+            "icon": "icon.png",
             "placeholder": "input your last name here",
-            "defaultvalue": "my field 01"
-        },
-        "button01": {
-            "caption": "CLICK_HERE",
-            "type": "kButtonType"
-        },
-        "label01": {
-            "caption": "MESSAGE_ERROR",
-            "type": "kLabelType"
+            "defaultvalue": "my field 01",
+            
         }
     }
 }

@@ -21,3 +21,5 @@ typedef NS_ENUM(NSInteger, kFieldType)
 
 // app related constants
 FOUNDATION_EXPORT NSString *const kDefaultCellIdentifier;
+
+static const CGFloat kDefaultSectionHeight = 44.f;

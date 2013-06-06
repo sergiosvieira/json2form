@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0DE5311D17602B6B00B3B18E /* J2FMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5311C17602B6A00B3B18E /* J2FMessages.m */; };
+		0DE531201760387300B3B18E /* J2FCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5311F1760387300B3B18E /* J2FCell.xib */; };
+		0DE53123176039E700B3B18E /* J2FCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE53122176039E700B3B18E /* J2FCell.m */; };
+		0DE5312617603A9100B3B18E /* J2FView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5312517603A9100B3B18E /* J2FView.m */; };
+		0DE5312A1760414700B3B18E /* J2FField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE531291760414600B3B18E /* J2FField.m */; };
+		0DE5312E1760429600B3B18E /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5312D1760429600B3B18E /* TextField.m */; };
 		3A30A9D7175FCBC000C1CD98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9D6175FCBC000C1CD98 /* UIKit.framework */; };
 		3A30A9D9175FCBC000C1CD98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9D8175FCBC000C1CD98 /* Foundation.framework */; };
 		3A30A9DB175FCBC000C1CD98 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9DA175FCBC000C1CD98 /* CoreGraphics.framework */; };
@@ -34,6 +39,15 @@
 		0DE5311A176026B600B3B18E /* J2F.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = J2F.h; path = lib/J2F.h; sourceTree = "<group>"; };
 		0DE5311B17602B6A00B3B18E /* J2FMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FMessages.h; path = lib/J2FMessages.h; sourceTree = "<group>"; };
 		0DE5311C17602B6A00B3B18E /* J2FMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FMessages.m; path = lib/J2FMessages.m; sourceTree = "<group>"; };
+		0DE5311F1760387300B3B18E /* J2FCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = J2FCell.xib; path = lib/view/nib/J2FCell.xib; sourceTree = "<group>"; };
+		0DE53121176039E700B3B18E /* J2FCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FCell.h; path = lib/view/nib/J2FCell.h; sourceTree = "<group>"; };
+		0DE53122176039E700B3B18E /* J2FCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FCell.m; path = lib/view/nib/J2FCell.m; sourceTree = "<group>"; };
+		0DE5312417603A9100B3B18E /* J2FView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FView.h; path = lib/view/J2FView.h; sourceTree = "<group>"; };
+		0DE5312517603A9100B3B18E /* J2FView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FView.m; path = lib/view/J2FView.m; sourceTree = "<group>"; };
+		0DE531281760414600B3B18E /* J2FField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FField.h; path = lib/J2FField.h; sourceTree = "<group>"; };
+		0DE531291760414600B3B18E /* J2FField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FField.m; path = lib/J2FField.m; sourceTree = "<group>"; };
+		0DE5312C1760429600B3B18E /* TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextField.h; path = lib/controller/field/TextField.h; sourceTree = "<group>"; };
+		0DE5312D1760429600B3B18E /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextField.m; path = lib/controller/field/TextField.m; sourceTree = "<group>"; };
 		3A30A9D3175FCBC000C1CD98 /* json2form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = json2form.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A30A9D6175FCBC000C1CD98 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3A30A9D8175FCBC000C1CD98 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -81,6 +95,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DE5311E176037E600B3B18E /* nib */ = {
+			isa = PBXGroup;
+			children = (
+				0DE5311F1760387300B3B18E /* J2FCell.xib */,
+				0DE53121176039E700B3B18E /* J2FCell.h */,
+				0DE53122176039E700B3B18E /* J2FCell.m */,
+			);
+			name = nib;
+			sourceTree = "<group>";
+		};
+		0DE5312B1760423300B3B18E /* field */ = {
+			isa = PBXGroup;
+			children = (
+				0DE5312C1760429600B3B18E /* TextField.h */,
+				0DE5312D1760429600B3B18E /* TextField.m */,
+			);
+			name = field;
+			sourceTree = "<group>";
+		};
 		3A30A9CA175FCBC000C1CD98 = {
 			isa = PBXGroup;
 			children = (
@@ -161,15 +194,17 @@
 		3A30AA02175FCCE300C1CD98 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				0DE5311A176026B600B3B18E /* J2F.h */,
 				3A30AA1B175FE68300C1CD98 /* J2FConstants.h */,
 				3A30AA10175FD63600C1CD98 /* J2FCoreData.h */,
+				0DE531281760414600B3B18E /* J2FField.h */,
+				0DE5311B17602B6A00B3B18E /* J2FMessages.h */,
 				3A30AA1C175FE68400C1CD98 /* J2FConstants.m */,
 				3A30AA11175FD63600C1CD98 /* J2FCoreData.m */,
+				0DE531291760414600B3B18E /* J2FField.m */,
+				0DE5311C17602B6A00B3B18E /* J2FMessages.m */,
 				3A30AA0B175FD58500C1CD98 /* category */,
 				3A30AA0C175FD59800C1CD98 /* jf */,
-				0DE5311A176026B600B3B18E /* J2F.h */,
-				0DE5311B17602B6A00B3B18E /* J2FMessages.h */,
-				0DE5311C17602B6A00B3B18E /* J2FMessages.m */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -186,6 +221,9 @@
 		3A30AA04175FCCED00C1CD98 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				0DE5311E176037E600B3B18E /* nib */,
+				0DE5312417603A9100B3B18E /* J2FView.h */,
+				0DE5312517603A9100B3B18E /* J2FView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -193,6 +231,7 @@
 		3A30AA05175FCCF200C1CD98 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0DE5312B1760423300B3B18E /* field */,
 				3A30AA06175FCD6400C1CD98 /* J2FController.h */,
 				3A30AA07175FCD6400C1CD98 /* J2FController.m */,
 				3A30AA17175FE06800C1CD98 /* J2FTableController.h */,
@@ -277,6 +316,7 @@
 				3A30A9FF175FCCD700C1CD98 /* CHANGELOG.md in Resources */,
 				3A30AA01175FCCD700C1CD98 /* README.md in Resources */,
 				3A30AA14175FDADB00C1CD98 /* assets.bundle in Resources */,
+				0DE531201760387300B3B18E /* J2FCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +337,10 @@
 				3A30AA19175FE06800C1CD98 /* J2FTableController.m in Sources */,
 				3A30AA1D175FE68400C1CD98 /* J2FConstants.m in Sources */,
 				0DE5311D17602B6B00B3B18E /* J2FMessages.m in Sources */,
+				0DE53123176039E700B3B18E /* J2FCell.m in Sources */,
+				0DE5312617603A9100B3B18E /* J2FView.m in Sources */,
+				0DE5312A1760414700B3B18E /* J2FField.m in Sources */,
+				0DE5312E1760429600B3B18E /* TextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

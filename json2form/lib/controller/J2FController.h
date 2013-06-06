@@ -19,6 +19,7 @@
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 
 - (UITableView *)tableView;
+- (NSString *)titleForHeaderInSection:(NSInteger)section;
 
 @property (strong, nonatomic) J2FTableController *tableController;
 @property (strong, nonatomic) J2FModel *model;
