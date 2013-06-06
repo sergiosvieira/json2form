@@ -9,6 +9,8 @@
 #import "J2FController.h"
 #import "J2FTableController.h"
 #import "J2FModel.h"
+#import "J2FView.h"
+
 
 @interface J2FController ()
 
@@ -16,7 +18,7 @@
 
 @implementation J2FController
 
-@synthesize tableController = _tableController, model = _model;
+@synthesize tableController = _tableController, model = _model, viewCell = _viewCell;
 
 - (void)viewDidLoad
 {
@@ -50,6 +52,16 @@
     return _model;
 }
 
+- (J2FView *)viewCell
+{
+    if (!_viewCell)
+    {
+        _viewCell = [[J2FView alloc] init];
+    }
+    
+    return _viewCell;
+}
+
 #pragma mark - J2FControllerProtocol
 - (NSInteger)numberOfSections
 {
@@ -69,7 +81,10 @@
     
     if (!cell)
     {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kDefaultCellIdentifier];
+        NSArray *array = [[NSBundle mainBundle] loadNibNamed:@"J2FCell" owner:self options:nil];
+        
+        cell = array[0];
+        cell.selectionStyle = UITableViewCellEditingStyleNone;
     }
     
     return cell;
@@ -77,6 +92,9 @@
 
 - (void)performConfigureCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
+    J2FField *field = [J2FCoreData field:self.model.results withIndexPath:indexPath];
+    
+    [self.viewCell configureCell:cell withJ2FField:field];
 }
 
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath

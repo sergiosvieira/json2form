@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class J2FTableController, J2FModel;
+@class J2FTableController, J2FModel, J2FView;
 @protocol J2FControllerProtocol <NSObject>
 
 @optional
@@ -23,7 +23,7 @@
 
 @property (strong, nonatomic) J2FTableController *tableController;
 @property (strong, nonatomic) J2FModel *model;
-
+@property (strong, nonatomic) J2FView *viewCell;
 @end
 
 @interface J2FController : UIViewController<J2FControllerProtocol>

@@ -7,7 +7,15 @@
 //
 
 #import "J2FView.h"
+#import "J2FField.h"
+#import "J2FCell.h"
+
 
 @implementation J2FView
+
+- (void)configureCell:(UITableViewCell *)cell withJ2FField:(J2FField *)field
+{
+    [field configureCell:cell];
+}
 
 @end

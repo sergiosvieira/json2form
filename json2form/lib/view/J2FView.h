@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class J2FField;
+
 @protocol J2FViewProtocol<NSObject>
 
 @optional

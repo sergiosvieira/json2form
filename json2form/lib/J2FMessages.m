@@ -17,4 +17,12 @@
     return text;
 }
 
++ (NSString *)invalidSection
+{
+    NSString *text = NSLocalizedString(@"INVALID_SECTION", nil);
+    
+    return text;
+}
+
+
 @end

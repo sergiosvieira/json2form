@@ -11,36 +11,12 @@
 
 @implementation J2FField
 
-@synthesize caption = _caption;
+@synthesize caption = _caption, placeholder =_placeholder, defaulValue = _defaulValue, keyboardType = _keyboardType,
+    values = _values, icon = _icon;
 
 - (NSString *)caption
 {
     return NSLocalizedString(_caption, nil);
-}
-
-- (NSString *)placeholder
-{
-    return @"";
-}
-
-- (NSString *)defaulValue
-{
-    return @"";
-}
-
-- (UIKeyboardType)keyboardType
-{
-    return UIKeyboardTypeDefault;
-}
-
-- (NSArray *)values
-{
-    return nil;
-}
-
-- (UIImage *)icon
-{
-    return nil;
 }
 
 @end

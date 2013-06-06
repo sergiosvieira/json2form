@@ -7,8 +7,11 @@
 //
 
 #import "J2FCoreData.h"
+#import "J2FField.h"
+#import "J2FFieldFactory.h"
 
 #import "JSONKit.h"
+
 
 @implementation J2FCoreData
 
@@ -46,11 +49,74 @@
     return dict.allKeys;
 }
 
+/**
+    @description: return a array with rows of a section
+    @in: a valid F2FJSON dictionary
+**/
++ (NSArray *)rows:(NSDictionary *)dict withSection:(NSInteger)section
+{
+    NSAssert(dict, [J2FMessages nilObject]);
+    NSAssert(section >= 0, [J2FMessages invalidSection]);
+    
+    NSDictionary *rows = [self allRows:dict fromSection:section];
+    
+    return rows.allKeys;
+}
+
++ (NSDictionary *)fieldsConfiguration:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath
+{
+    NSAssert( [self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
+    
+    NSArray *fields = [self rows:dict withSection:indexPath.section];
+    NSString *fieldTitle = fields[indexPath.row];
+    NSDictionary *rows = [self allRows:dict fromSection:indexPath.section];
+    
+    return rows[fieldTitle];
+}
+
++ (J2FField *)field:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
+{
+   NSAssert([self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
+   
+//NSString *const kTypeField = @"type";
+//NSString *const kCaptionField = @"caption";
+//NSString *const kPlaceHolderField = @"placeholder";
+//NSString *const kDefaultValueField = @"defaultvalue";
+//NSString *const kKeyBoardStyleField = @"keyboardstyle";
+//NSString *const kValuesField = @"values";
+//NSString *const kIconField = @"icon";
+   
+   
+    NSDictionary *fieldConfiguration = [self fieldsConfiguration:dict withIndexPath:indexPath];
+    NSString *type = fieldConfiguration[kTypeField];
+    NSString *caption = fieldConfiguration[kCaptionField];
+    NSString *placeholder = fieldConfiguration[kPlaceHolderField];
+    UIImage *icon = fieldConfiguration[kIconField];
+
+    J2FField *field = [J2FFieldFactory createWithString:type];
+
+    field.caption = caption;
+    field.placeholder = placeholder;
+
+   return field;
+}
+
 #pragma mark - Private Methods
 + (BOOL)isValidJ2FJSON:(NSDictionary *)dict
 {
+    NSAssert(dict, [J2FMessages nilObject]);
+    
     /** TODO: you must implement this **/
     return YES;
+}
+
++ (NSDictionary *)allRows:(NSDictionary *)dict fromSection:(NSInteger)section
+{
+    NSArray *sections = [self sections:dict];
+    NSString *sectionTitle = sections[section];
+    NSDictionary *rows = dict[sectionTitle];
+
+    return rows;
 }
 
 @end

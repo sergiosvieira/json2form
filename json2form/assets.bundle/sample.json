@@ -3,7 +3,7 @@
         "field01": {
             "type": "kTextType",
             "caption": "NAME",
-            "placeholder": "input yout name here",
+            "placeholder": "input your name here",
             "defaultvalue": "my field 01",
             "keyboardstyle": "kDefaultKeyboard"
         },
@@ -25,8 +25,7 @@
             "type": "kIconType",
             "icon": "icon.png",
             "placeholder": "input your last name here",
-            "defaultvalue": "my field 01",
-            
+            "defaultvalue": "my field 01"
         }
     }
 }

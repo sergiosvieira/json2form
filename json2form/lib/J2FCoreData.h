@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+
+@class J2FField;
+
 @interface J2FCoreData : NSObject
 
 + (NSDictionary *)loadFromJSON:(NSString *)filename;
@@ -16,5 +19,12 @@
     @in: a valid F2FJSON dictionary
 **/
 + (NSArray *)sections:(NSDictionary *)dict;
+/**
+    @description: return a array with rows of a section
+    @in: a valid F2FJSON dictionary
+**/
++ (NSArray *)rows:(NSDictionary *)dict withSection:(NSInteger)section;
++ (NSDictionary *)fieldsConfiguration:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
++ (J2FField *)field:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
 
 @end

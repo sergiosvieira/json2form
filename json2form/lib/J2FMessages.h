@@ -11,5 +11,6 @@
 @interface J2FMessages : NSObject
 
 + (NSString *)nilObject;
++ (NSString *)invalidSection;
 
 @end

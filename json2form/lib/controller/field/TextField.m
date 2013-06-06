@@ -7,7 +7,20 @@
 //
 
 #import "TextField.h"
+#import "J2FCell.h"
+
 
 @implementation TextField
+
+- (void)configureCell:(UITableViewCell *)cell
+{
+    J2FCell *ccell = (J2FCell *)cell;
+    UIImage *image = [UIImage imageNamed:self.icon];
+    
+    ccell.caption.text = self.caption;
+    ccell.textField.placeholder = self.placeholder;
+    ccell.textField.text = self.defaulValue;
+    [ccell.imageView setImage:image];
+}
 
 @end
