@@ -21,8 +21,6 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    NSLog(@"%s", __PRETTY_FUNCTION__);
-    
     if ([keyPath isEqualToString:@"currentValue"])
     {
         self.changed = @(YES);
@@ -31,8 +29,6 @@
 
 - (id)valueForKey:(NSString *)key
 {
-    NSLog(@"%s --> %@", __PRETTY_FUNCTION__, key);
-
     if ([key isEqualToString:@"changed"])
     {
         return self.changed;

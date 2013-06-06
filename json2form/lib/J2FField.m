@@ -23,4 +23,9 @@
 {
 }
 
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    self.currentValue = textField.text;
+}
+
 @end

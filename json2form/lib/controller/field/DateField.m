@@ -35,6 +35,7 @@
     ccell.textField.placeholder = self.placeholder;
     ccell.textField.text =  self.currentValue ? self.currentValue : self.defaulValue;
     ccell.textField.inputView = self.datePicker;
+    ccell.textField.delegate = self;
 }
 
 #pragma mark - Selectors
@@ -49,14 +50,17 @@
 
 - (id)valueForKey:(NSString *)key
 {
-    NSLog(@"%s --> %@", __PRETTY_FUNCTION__, key);
-    
     if ([key isEqualToString:@"currentValue"])
     {
         return self.currentValue;
     }
     
     return nil;
+}
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    /** this must be null **/
 }
 
 @end

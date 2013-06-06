@@ -7,13 +7,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "json2form/lib/controller/J2FController.m"
-         timestampString = "392240249.928438"
+         filePath = "json2form/lib/J2FCoreData.m"
+         timestampString = "392242898.547551"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "112"
-         endingLineNumber = "112"
-         landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
+         landmarkName = "+field:withIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

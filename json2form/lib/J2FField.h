@@ -25,6 +25,6 @@
 
 @end
 
-@interface J2FField : NSObject<J2FFieldProtocol>
+@interface J2FField : NSObject<J2FFieldProtocol, UITextFieldDelegate>
 
 @end

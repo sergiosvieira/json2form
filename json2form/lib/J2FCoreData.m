@@ -83,12 +83,14 @@
     NSString *caption = fieldConfiguration[kCaptionField];
     NSString *placeholder = fieldConfiguration[kPlaceHolderField];
     NSString *icon = fieldConfiguration[kIconField];
+    NSArray *values = fieldConfiguration[kValuesField];
 
-    J2FField *field = [J2FFieldFactory createWithString:type];
+    J2FField *field = (J2FField *)[J2FFieldFactory createWithString:type];
 
     field.caption = caption;
     field.placeholder = placeholder;
     field.icon = icon;
+    field.values = values;
     
     return field;
 }

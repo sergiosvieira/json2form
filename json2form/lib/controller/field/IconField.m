@@ -17,9 +17,10 @@
     J2FCell *ccell = (J2FCell *)cell;
     UIImage *image = [UIImage imageNamed:self.icon];
     
+    ccell.textField.delegate = self;
     ccell.caption.text = self.caption;
     ccell.textField.placeholder = self.placeholder;
-    ccell.textField.text = self.defaulValue;
+    ccell.textField.text =  self.currentValue ? self.currentValue : self.defaulValue;
     [ccell.icon setImage:image];
 }
 

@@ -8,8 +8,11 @@
 
 #import "J2FField.h"
 
-@interface SelectionField : J2FField
+@interface SelectionField : J2FField<UIPickerViewDelegate, UIPickerViewDataSource>
+{
+    NSArray *results;
+}
 
-
+@property (nonatomic, strong) UIPickerView *picker;
 
 @end
