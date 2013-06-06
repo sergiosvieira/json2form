@@ -101,6 +101,16 @@
     }
     
     [self.viewCell configureCell:cell withJ2FField:field];
+    [self.viewCell addObserver:self forKeyPath:@"changed" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+        context:NULL];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if ([keyPath isEqual:@"changed"])
+    {
+       [self.tableView reloadData];
+    }
 }
 
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath

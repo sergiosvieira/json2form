@@ -20,4 +20,6 @@
 
 @interface J2FView : NSObject<J2FViewProtocol>
 
+@property (strong, nonatomic) NSNumber *changed;
+
 @end

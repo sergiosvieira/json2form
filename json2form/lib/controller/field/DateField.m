@@ -33,7 +33,7 @@
     
     ccell.caption.text = self.caption;
     ccell.textField.placeholder = self.placeholder;
-    ccell.textField.text = self.defaulValue;
+    ccell.textField.text =  self.currentValue ? self.currentValue : self.defaulValue;
     ccell.textField.inputView = self.datePicker;
 }
 
@@ -45,6 +45,18 @@
     NSString *date = [dateFormat stringFromDate:datePicker.date ];
     
     self.currentValue = date;
+}
+
+- (id)valueForKey:(NSString *)key
+{
+    NSLog(@"%s --> %@", __PRETTY_FUNCTION__, key);
+    
+    if ([key isEqualToString:@"currentValue"])
+    {
+        return self.currentValue;
+    }
+    
+    return nil;
 }
 
 @end
