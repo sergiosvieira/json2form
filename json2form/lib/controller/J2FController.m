@@ -10,6 +10,7 @@
 #import "J2FTableController.h"
 #import "J2FModel.h"
 #import "J2FView.h"
+#import "J2FField.h"
 
 
 @interface J2FController ()
@@ -125,6 +126,14 @@
 - (NSString *)titleForHeaderInSection:(NSInteger)section
 {
     return self.model.sections[section];
+}
+
+#pragma mark - Public Methods
+- (void)setValue:(NSString *)value toIndexPath:(NSIndexPath *)indexPath
+{
+    J2FField *field = temporaryFieldsList[indexPath];
+    
+    field.currentValue = value;
 }
 
 #pragma mark - Private Methods

@@ -31,4 +31,6 @@
     NSMutableDictionary *temporaryFieldsList;
 }
 
+- (void)setValue:(NSString *)value toIndexPath:(NSIndexPath *)indexPath;
+
 @end
