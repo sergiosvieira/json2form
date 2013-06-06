@@ -21,10 +21,7 @@ NSString *const kValuesField = @"values";
 NSString *const kIconField = @"icon";
 
 // string fields type
-NSString *const kStrTextField = @"kTextType";
-NSString *const kStrCaptionField = @"kCaptionField";
-NSString *const kStrPlaceHolderField = @"kPlaceHolderField";
-NSString *const kStrDefaultValueField = @"kDefaultValueField";
-NSString *const kStrKeyBoardStyleField = @"kKeyBoardStyleField";
-NSString *const kStrValuesField = @"kValuesField";
-NSString *const kStrIconField = @"kIconField";
+NSString *const kStrTextType = @"kTextType";
+NSString *const kStrDateType = @"kDateType";
+NSString *const kStrSelectionType = @"kSelectionType";
+NSString *const kStrIconType = @"kIconType";

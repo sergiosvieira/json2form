@@ -7,7 +7,20 @@
 //
 
 #import "IconField.h"
+#import "J2FCell.h"
+
 
 @implementation IconField
+
+- (void)configureCell:(UITableViewCell *)cell
+{
+    J2FCell *ccell = (J2FCell *)cell;
+    UIImage *image = [UIImage imageNamed:self.icon];
+    
+    ccell.caption.text = self.caption;
+    ccell.textField.placeholder = self.placeholder;
+    ccell.textField.text = self.defaulValue;
+    [ccell.icon setImage:image];
+}
 
 @end

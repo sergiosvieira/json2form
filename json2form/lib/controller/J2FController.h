@@ -27,5 +27,8 @@
 @end
 
 @interface J2FController : UIViewController<J2FControllerProtocol>
+{
+    NSMutableDictionary *temporaryFieldsList;
+}
 
 @end

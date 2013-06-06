@@ -76,29 +76,21 @@
 
 + (J2FField *)field:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
 {
-   NSAssert([self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
-   
-//NSString *const kTypeField = @"type";
-//NSString *const kCaptionField = @"caption";
-//NSString *const kPlaceHolderField = @"placeholder";
-//NSString *const kDefaultValueField = @"defaultvalue";
-//NSString *const kKeyBoardStyleField = @"keyboardstyle";
-//NSString *const kValuesField = @"values";
-//NSString *const kIconField = @"icon";
-   
-   
+    NSAssert([self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
+    
     NSDictionary *fieldConfiguration = [self fieldsConfiguration:dict withIndexPath:indexPath];
     NSString *type = fieldConfiguration[kTypeField];
     NSString *caption = fieldConfiguration[kCaptionField];
     NSString *placeholder = fieldConfiguration[kPlaceHolderField];
-    UIImage *icon = fieldConfiguration[kIconField];
+    NSString *icon = fieldConfiguration[kIconField];
 
     J2FField *field = [J2FFieldFactory createWithString:type];
 
     field.caption = caption;
     field.placeholder = placeholder;
-
-   return field;
+    field.icon = icon;
+    
+    return field;
 }
 
 #pragma mark - Private Methods

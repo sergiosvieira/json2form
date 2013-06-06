@@ -8,6 +8,8 @@
 
 #import "J2FField.h"
 
-@interface SelectionType : J2FField
+@interface SelectionField : J2FField
+
+
 
 @end

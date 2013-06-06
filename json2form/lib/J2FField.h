@@ -11,16 +11,17 @@
 
 @protocol J2FFieldProtocol<NSObject>
 
-@optional
-
+@required
 - (void)configureCell:(UITableViewCell *)cell;
 
+@optional
 @property (strong, nonatomic) NSString *caption;
 @property (strong, nonatomic) NSString *placeholder;
 @property (strong, nonatomic) NSString *defaulValue;
 @property (assign, nonatomic) UIKeyboardType keyboardType;
 @property (strong, nonatomic) NSArray *values;
 @property (strong, nonatomic) NSString *icon;
+@property (strong, nonatomic) NSString *currentValue;
 
 @end
 

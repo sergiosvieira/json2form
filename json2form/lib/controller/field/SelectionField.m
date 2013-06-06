@@ -1,16 +1,15 @@
 //
-//  TextField.m
+//  SelectionType.m
 //  json2form
 //
-//  Created by sergio vieira on 06/06/13.
+//  Created by Paulo Pinheiro on 6/6/13.
 //  Copyright (c) 2013 Bravo Inovação. All rights reserved.
 //
 
-#import "TextField.h"
+#import "SelectionField.h"
 #import "J2FCell.h"
 
-
-@implementation TextField
+@implementation SelectionField
 
 - (void)configureCell:(UITableViewCell *)cell
 {

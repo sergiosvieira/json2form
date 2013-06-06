@@ -12,11 +12,15 @@
 @implementation J2FField
 
 @synthesize caption = _caption, placeholder =_placeholder, defaulValue = _defaulValue, keyboardType = _keyboardType,
-    values = _values, icon = _icon;
+    values = _values, icon = _icon, currentValue = _currentValue;
 
 - (NSString *)caption
 {
     return NSLocalizedString(_caption, nil);
+}
+
+- (void)configureCell:(UITableViewCell *)cell
+{
 }
 
 @end

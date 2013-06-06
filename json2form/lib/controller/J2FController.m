@@ -92,7 +92,13 @@
 
 - (void)performConfigureCell:(UITableViewCell *)cell withIndexPath:(NSIndexPath *)indexPath
 {
-    J2FField *field = [J2FCoreData field:self.model.results withIndexPath:indexPath];
+    J2FField *field = temporaryFieldsList[indexPath];
+    
+    if (!field)
+    {
+        field = [J2FCoreData field:self.model.results withIndexPath:indexPath];
+        temporaryFieldsList[indexPath] = field;
+    }
     
     [self.viewCell configureCell:cell withJ2FField:field];
 }
@@ -116,6 +122,7 @@
 {
     /** initializing **/
     [self.view addSubview:self.tableController.view];
+    temporaryFieldsList = [[NSMutableDictionary alloc] init];
 }
 
 @end

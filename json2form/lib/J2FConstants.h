@@ -33,12 +33,9 @@ FOUNDATION_EXPORT NSString *const kValuesField;
 FOUNDATION_EXPORT NSString *const kIconField;
 
 // string fields type
-FOUNDATION_EXPORT NSString *const kStrTextField;
-FOUNDATION_EXPORT NSString *const kStrCaptionField;
-FOUNDATION_EXPORT NSString *const kStrPlaceHolderField;
-FOUNDATION_EXPORT NSString *const kStrDefaultValueField;
-FOUNDATION_EXPORT NSString *const kStrKeyBoardStyleField;
-FOUNDATION_EXPORT NSString *const kStrValuesField;
-FOUNDATION_EXPORT NSString *const kStrIconField;
+FOUNDATION_EXPORT NSString *const kStrTextType;
+FOUNDATION_EXPORT NSString *const kStrDateType;
+FOUNDATION_EXPORT NSString *const kStrSelectionType;
+FOUNDATION_EXPORT NSString *const kStrIconType;
 
 static const CGFloat kDefaultSectionHeight = 44.f;

@@ -15,8 +15,8 @@
 		0DE5312E1760429600B3B18E /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5312D1760429600B3B18E /* TextField.m */; };
 		3A18A4AF1760BE3B00546209 /* J2FFieldFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18A4AE1760BE3B00546209 /* J2FFieldFactory.m */; };
 		3A18A4B21760CD4E00546209 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A18A4B01760CD4E00546209 /* Localizable.strings */; };
-		3A18A4B51760D0FB00546209 /* DateType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18A4B41760D0FA00546209 /* DateType.m */; };
-		3A18A4B81760D11E00546209 /* SelectionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18A4B71760D11D00546209 /* SelectionType.m */; };
+		3A18A4B51760D0FB00546209 /* DateField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18A4B41760D0FA00546209 /* DateField.m */; };
+		3A18A4B81760D11E00546209 /* SelectionField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18A4B71760D11D00546209 /* SelectionField.m */; };
 		3A18A4BB1760D14900546209 /* IconField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A18A4BA1760D14900546209 /* IconField.m */; };
 		3A30A9D7175FCBC000C1CD98 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9D6175FCBC000C1CD98 /* UIKit.framework */; };
 		3A30A9D9175FCBC000C1CD98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A30A9D8175FCBC000C1CD98 /* Foundation.framework */; };
@@ -38,6 +38,7 @@
 		3A30AA14175FDADB00C1CD98 /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A30AA13175FDADA00C1CD98 /* assets.bundle */; };
 		3A30AA19175FE06800C1CD98 /* J2FTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA18175FE06800C1CD98 /* J2FTableController.m */; };
 		3A30AA1D175FE68400C1CD98 /* J2FConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A30AA1C175FE68400C1CD98 /* J2FConstants.m */; };
+		3ADCC2941760F04B00D53ABF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ADCC2931760F04B00D53ABF /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,10 +57,10 @@
 		3A18A4AD1760BE3A00546209 /* J2FFieldFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FFieldFactory.h; path = lib/J2FFieldFactory.h; sourceTree = "<group>"; };
 		3A18A4AE1760BE3B00546209 /* J2FFieldFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FFieldFactory.m; path = lib/J2FFieldFactory.m; sourceTree = "<group>"; };
 		3A18A4B11760CD4E00546209 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3A18A4B31760D0FA00546209 /* DateType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateType.h; path = lib/controller/field/DateType.h; sourceTree = "<group>"; };
-		3A18A4B41760D0FA00546209 /* DateType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateType.m; path = lib/controller/field/DateType.m; sourceTree = "<group>"; };
-		3A18A4B61760D11D00546209 /* SelectionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionType.h; path = lib/controller/field/SelectionType.h; sourceTree = "<group>"; };
-		3A18A4B71760D11D00546209 /* SelectionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionType.m; path = lib/controller/field/SelectionType.m; sourceTree = "<group>"; };
+		3A18A4B31760D0FA00546209 /* DateField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateField.h; path = lib/controller/field/DateField.h; sourceTree = "<group>"; };
+		3A18A4B41760D0FA00546209 /* DateField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateField.m; path = lib/controller/field/DateField.m; sourceTree = "<group>"; };
+		3A18A4B61760D11D00546209 /* SelectionField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionField.h; path = lib/controller/field/SelectionField.h; sourceTree = "<group>"; };
+		3A18A4B71760D11D00546209 /* SelectionField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionField.m; path = lib/controller/field/SelectionField.m; sourceTree = "<group>"; };
 		3A18A4B91760D14900546209 /* IconField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IconField.h; path = lib/controller/field/IconField.h; sourceTree = "<group>"; };
 		3A18A4BA1760D14900546209 /* IconField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IconField.m; path = lib/controller/field/IconField.m; sourceTree = "<group>"; };
 		3A30A9D3175FCBC000C1CD98 /* json2form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = json2form.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +94,7 @@
 		3A30AA18175FE06800C1CD98 /* J2FTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FTableController.m; path = lib/controller/J2FTableController.m; sourceTree = "<group>"; };
 		3A30AA1B175FE68300C1CD98 /* J2FConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FConstants.h; path = lib/J2FConstants.h; sourceTree = "<group>"; };
 		3A30AA1C175FE68400C1CD98 /* J2FConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FConstants.m; path = lib/J2FConstants.m; sourceTree = "<group>"; };
+		3ADCC2931760F04B00D53ABF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +126,10 @@
 			children = (
 				0DE5312C1760429600B3B18E /* TextField.h */,
 				0DE5312D1760429600B3B18E /* TextField.m */,
-				3A18A4B31760D0FA00546209 /* DateType.h */,
-				3A18A4B41760D0FA00546209 /* DateType.m */,
-				3A18A4B61760D11D00546209 /* SelectionType.h */,
-				3A18A4B71760D11D00546209 /* SelectionType.m */,
+				3A18A4B31760D0FA00546209 /* DateField.h */,
+				3A18A4B41760D0FA00546209 /* DateField.m */,
+				3A18A4B61760D11D00546209 /* SelectionField.h */,
+				3A18A4B71760D11D00546209 /* SelectionField.m */,
 				3A18A4B91760D14900546209 /* IconField.h */,
 				3A18A4BA1760D14900546209 /* IconField.m */,
 			);
@@ -180,6 +182,7 @@
 		3A30A9DD175FCBC000C1CD98 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3ADCC2931760F04B00D53ABF /* icon.png */,
 				3A18A4B01760CD4E00546209 /* Localizable.strings */,
 				3A30A9DE175FCBC000C1CD98 /* json2form-Info.plist */,
 				3A30A9DF175FCBC000C1CD98 /* InfoPlist.strings */,
@@ -341,6 +344,7 @@
 				3A30AA14175FDADB00C1CD98 /* assets.bundle in Resources */,
 				0DE531201760387300B3B18E /* J2FCell.xib in Resources */,
 				3A18A4B21760CD4E00546209 /* Localizable.strings in Resources */,
+				3ADCC2941760F04B00D53ABF /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,8 +370,8 @@
 				0DE5312A1760414700B3B18E /* J2FField.m in Sources */,
 				0DE5312E1760429600B3B18E /* TextField.m in Sources */,
 				3A18A4AF1760BE3B00546209 /* J2FFieldFactory.m in Sources */,
-				3A18A4B51760D0FB00546209 /* DateType.m in Sources */,
-				3A18A4B81760D11E00546209 /* SelectionType.m in Sources */,
+				3A18A4B51760D0FB00546209 /* DateField.m in Sources */,
+				3A18A4B81760D11E00546209 /* SelectionField.m in Sources */,
 				3A18A4BB1760D14900546209 /* IconField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,9 @@
 #import "J2FFieldFactory.h"
 #import "J2FField.h"
 #import "TextField.h"
+#import "DateField.h"
+#import "SelectionField.h"
+#import "IconField.h"
 
 
 @implementation J2FFieldFactory
@@ -21,6 +24,18 @@
             return [[TextField alloc] init];
         break;
         
+        case kDateType:
+            return [[DateField alloc] init];
+        break;
+        
+        case kSelectionType:
+            return [[SelectionField alloc] init];
+        break;
+        
+        case kIconType:
+            return [[IconField alloc] init];
+        break;
+        
         default:
             return [[TextField alloc] init];
     }
@@ -28,9 +43,21 @@
 
 + (id<J2FFieldProtocol>)createWithString:(NSString *)type
 {
-    if ([type isEqualToString:kStrTextField])
+    if ([type isEqualToString:kStrTextType])
     {
         return [self create:kTextType];
+    }
+    else if ([type isEqualToString:kStrDateType])
+    {
+        return [self create:kDateType];
+    }
+    else if ([type isEqualToString:kStrSelectionType])
+    {
+        return [self create:kSelectionType];
+    }
+    else if ([type isEqualToString:kStrIconType])
+    {
+        return [self create:kIconType];
     }
     
     return nil;
