@@ -8,6 +8,8 @@
 
 #import "J2FTableController.h"
 #import "J2FController.h"
+#import "J2FElement.h"
+#import "J2FElementFactory.h"
 
 
 @interface J2FTableController ()
@@ -74,7 +76,12 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return kDefaultSectionHeight;
+    return kJ2FDefaultSectionHeight;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [self.parent viewForFooterInSection:section];
 }
 
 #pragma mark - Table view delegate

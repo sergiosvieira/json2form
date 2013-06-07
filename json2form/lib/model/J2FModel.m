@@ -10,7 +10,7 @@
 
 @implementation J2FModel
 
-@synthesize sections = _sections, results = _results;
+@synthesize sections = _sections, results = _results, elements = _elements;
 
 #pragma mark - Lazy Instantiating
 - (NSDictionary *)results
@@ -25,12 +25,12 @@
 
 - (NSDictionary *)elements
 {
-    if (!_results)
+    if (!_elements)
     {
-        _results = [J2FCoreData loadFromJSON:@"elements"];
+        _elements = [J2FCoreData loadFromJSON:@"elements"];
     }
     
-    return _results;
+    return _elements;
 }
 
 - (NSArray *)sections

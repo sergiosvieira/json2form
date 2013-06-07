@@ -11,6 +11,8 @@
 #import "J2FModel.h"
 #import "J2FView.h"
 #import "J2FField.h"
+#import "J2FElement.h"
+#import "J2FElementFactory.h"
 
 
 @interface J2FController ()
@@ -128,6 +130,37 @@
     return self.model.sections[section];
 }
 
+- (UIView *)viewForFooterInSection:(NSInteger)section
+{
+    UIView *sectionView = temporaryElementViewList[@(section)];
+    
+    if (!sectionView)
+    {
+        NSInteger footerHeight = 0;
+        NSDictionary *rows = [J2FCoreData allFieldsConfiguration:self.model.elements inSection:section];
+        NSArray *allValues = rows.allValues;
+        
+        for (NSDictionary *dict in allValues)
+        {
+            NSString *caption = dict[kCaptionField];
+            NSString *type = dict[kTypeField];
+            J2FElement *element = [J2FElementFactory createWithString:type];
+            
+            sectionView = [[UIView alloc] init];
+            [sectionView addSubview:[element viewWithCaption:caption]];
+            footerHeight += [element height];
+            temporaryElementViewList[@(section)] = sectionView;
+        }
+        
+        CGRect frame = sectionView.frame;
+        
+        frame.size.height = footerHeight + kJ2FDefaultFooterPadding;
+        sectionView.frame = frame;
+    }
+    
+    return sectionView;
+}
+
 #pragma mark - Public Methods
 - (void)setValue:(NSString *)value toIndexPath:(NSIndexPath *)indexPath
 {
@@ -142,6 +175,7 @@
     /** initializing **/
     [self.view addSubview:self.tableController.view];
     temporaryFieldsList = [[NSMutableDictionary alloc] init];
+    temporaryElementViewList = [[NSMutableDictionary alloc] init];
 }
 
 @end

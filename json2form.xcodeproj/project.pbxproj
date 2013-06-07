@@ -10,6 +10,7 @@
 		0D44C6A51761C44E0066E6F7 /* J2FElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6A41761C44E0066E6F7 /* J2FElement.m */; };
 		0D44C6A81761C4AD0066E6F7 /* ButtonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6A71761C4AD0066E6F7 /* ButtonElement.m */; };
 		0D44C6AB1761C4C10066E6F7 /* LabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6AA1761C4C10066E6F7 /* LabelElement.m */; };
+		0D44C6AE1761C5A70066E6F7 /* J2FElementFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6AD1761C5A70066E6F7 /* J2FElementFactory.m */; };
 		0DE5311D17602B6B00B3B18E /* J2FMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5311C17602B6A00B3B18E /* J2FMessages.m */; };
 		0DE531201760387300B3B18E /* J2FCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5311F1760387300B3B18E /* J2FCell.xib */; };
 		0DE53123176039E700B3B18E /* J2FCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE53122176039E700B3B18E /* J2FCell.m */; };
@@ -51,6 +52,8 @@
 		0D44C6A71761C4AD0066E6F7 /* ButtonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonElement.m; path = lib/controller/element/ButtonElement.m; sourceTree = "<group>"; };
 		0D44C6A91761C4C10066E6F7 /* LabelElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelElement.h; path = lib/controller/element/LabelElement.h; sourceTree = "<group>"; };
 		0D44C6AA1761C4C10066E6F7 /* LabelElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabelElement.m; path = lib/controller/element/LabelElement.m; sourceTree = "<group>"; };
+		0D44C6AC1761C5A70066E6F7 /* J2FElementFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FElementFactory.h; path = lib/J2FElementFactory.h; sourceTree = "<group>"; };
+		0D44C6AD1761C5A70066E6F7 /* J2FElementFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FElementFactory.m; path = lib/J2FElementFactory.m; sourceTree = "<group>"; };
 		0DE5311A176026B600B3B18E /* J2F.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = J2F.h; path = lib/J2F.h; sourceTree = "<group>"; };
 		0DE5311B17602B6A00B3B18E /* J2FMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FMessages.h; path = lib/J2FMessages.h; sourceTree = "<group>"; };
 		0DE5311C17602B6A00B3B18E /* J2FMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FMessages.m; path = lib/J2FMessages.m; sourceTree = "<group>"; };
@@ -246,6 +249,8 @@
 				3A30AA11175FD63600C1CD98 /* J2FCoreData.m */,
 				0D44C6A31761C44E0066E6F7 /* J2FElement.h */,
 				0D44C6A41761C44E0066E6F7 /* J2FElement.m */,
+				0D44C6AC1761C5A70066E6F7 /* J2FElementFactory.h */,
+				0D44C6AD1761C5A70066E6F7 /* J2FElementFactory.m */,
 				0DE531281760414600B3B18E /* J2FField.h */,
 				0DE531291760414600B3B18E /* J2FField.m */,
 				3A18A4AD1760BE3A00546209 /* J2FFieldFactory.h */,
@@ -399,6 +404,7 @@
 				0D44C6A51761C44E0066E6F7 /* J2FElement.m in Sources */,
 				0D44C6A81761C4AD0066E6F7 /* ButtonElement.m in Sources */,
 				0D44C6AB1761C4C10066E6F7 /* LabelElement.m in Sources */,
+				0D44C6AE1761C5A70066E6F7 /* J2FElementFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

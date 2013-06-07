@@ -25,6 +25,7 @@
 **/
 + (NSArray *)rows:(NSDictionary *)dict withSection:(NSInteger)section;
 + (NSDictionary *)fieldsConfiguration:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
++ (NSDictionary *)allFieldsConfiguration:(NSDictionary *)dict inSection:(NSInteger)section;
 + (J2FField *)field:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
 
 @end

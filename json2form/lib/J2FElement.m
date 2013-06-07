@@ -10,4 +10,14 @@
 
 @implementation J2FElement
 
+- (id)viewWithCaption:(NSString *)caption
+{
+    return nil;
+}
+
+- (CGFloat)height
+{
+    return kJ2FDefaultFooterPadding;
+}
+
 @end

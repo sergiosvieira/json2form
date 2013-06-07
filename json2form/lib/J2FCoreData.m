@@ -74,6 +74,15 @@
     return rows[fieldTitle];
 }
 
++ (NSDictionary *)allFieldsConfiguration:(NSDictionary *)dict inSection:(NSInteger)section
+{
+    NSAssert( [self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
+    
+    NSDictionary *rows = [self allRows:dict fromSection:section];
+    
+    return rows;
+}
+
 + (J2FField *)field:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath;
 {
     NSAssert([self isValidJ2FJSON:dict], @"invalid J2FJSON format.");

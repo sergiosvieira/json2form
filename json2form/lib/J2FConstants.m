@@ -25,3 +25,5 @@ NSString *const kStrTextType = @"kTextType";
 NSString *const kStrDateType = @"kDateType";
 NSString *const kStrSelectionType = @"kSelectionType";
 NSString *const kStrIconType = @"kIconType";
+NSString *const kStrButtonType = @"kSelectionType";
+NSString *const kStrLabelType = @"kIconType";

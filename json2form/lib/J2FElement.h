@@ -12,6 +12,8 @@
 @protocol J2FElementProtocol<NSObject>
 
 @optional
+- (id)viewWithCaption:(NSString *)caption;
+- (CGFloat)height;
 
 @end
 

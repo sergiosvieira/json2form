@@ -38,4 +38,5 @@ FOUNDATION_EXPORT NSString *const kStrDateType;
 FOUNDATION_EXPORT NSString *const kStrSelectionType;
 FOUNDATION_EXPORT NSString *const kStrIconType;
 
-static const CGFloat kDefaultSectionHeight = 44.f;
+static const CGFloat kJ2FDefaultSectionHeight = 44.f;
+static const CGFloat kJ2FDefaultFooterPadding = 10.f;

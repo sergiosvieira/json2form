@@ -20,6 +20,7 @@
 
 - (UITableView *)tableView;
 - (NSString *)titleForHeaderInSection:(NSInteger)section;
+- (UIView *)viewForFooterInSection:(NSInteger)section;
 
 @property (strong, nonatomic) J2FTableController *tableController;
 @property (strong, nonatomic) J2FModel *model;
@@ -29,6 +30,7 @@
 @interface J2FController : UIViewController<J2FControllerProtocol>
 {
     NSMutableDictionary *temporaryFieldsList;
+    NSMutableDictionary *temporaryElementViewList;
 }
 
 - (void)setValue:(NSString *)value toIndexPath:(NSIndexPath *)indexPath;
