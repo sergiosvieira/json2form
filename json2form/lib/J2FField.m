@@ -11,7 +11,7 @@
 
 @implementation J2FField
 
-@synthesize caption = _caption, placeholder =_placeholder, defaulValue = _defaulValue, keyboardType = _keyboardType,
+@synthesize identifier = _identifier, caption = _caption, placeholder =_placeholder, defaulValue = _defaulValue, keyboardType = _keyboardType,
     values = _values, icon = _icon, currentValue = _currentValue;
 
 - (NSString *)caption
@@ -26,6 +26,13 @@
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     self.currentValue = textField.text;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField
+{
+    [theTextField resignFirstResponder];
+    
+    return YES;
 }
 
 @end

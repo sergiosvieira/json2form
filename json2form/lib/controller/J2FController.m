@@ -169,6 +169,34 @@
     field.currentValue = value;
 }
 
+- (NSDictionary *)allValues
+{
+    NSMutableDictionary *result = [[NSMutableDictionary alloc] initWithCapacity:[self.model.results.allKeys count]];
+    
+    for (J2FField *field in temporaryFieldsList.allValues)
+    {
+        result[field.identifier] = field.currentValue;
+    }
+    
+    return result;
+}
+
+- (void)setValuesWithDict:(NSDictionary *)dict
+{
+    NSAssert(dict, [Messages nilObject]);
+    
+    for (NSString *identifier in dict.allKeys)
+    {
+        for (J2FField *field in temporaryFieldsList.allValues)
+        {
+            if ([identifier isEqualToString:field.identifier])
+            {
+                field.currentValue = dict[identifier];
+            }
+        }
+    }
+}
+
 #pragma mark - Private Methods
 - (void)loading
 {

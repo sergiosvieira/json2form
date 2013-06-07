@@ -17,7 +17,12 @@
 
 + (NSDictionary *)loadFromJSON:(NSString *)filename
 {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"assets" ofType:@"bundle"];
+    return [self loadFromJSON:filename inBundle:@"assets"];
+}
+
++ (NSDictionary *)loadFromJSON:(NSString *)filename inBundle:(NSString *)bundle
+{
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:bundle ofType:@"bundle"];
     NSString *imageName = [[NSBundle bundleWithPath:bundlePath] pathForResource:filename ofType:@"json"];
     NSData *jsonData = [NSData dataWithContentsOfFile:imageName];
     
@@ -74,6 +79,16 @@
     return rows[fieldTitle];
 }
 
++ (NSString *)fieldIdentifier:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath
+{
+    NSAssert( [self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
+    
+    NSArray *fields = [self rows:dict withSection:indexPath.section];
+    NSString *fieldTitle = fields[indexPath.row];
+    
+    return fieldTitle;
+}
+
 + (NSDictionary *)allFieldsConfiguration:(NSDictionary *)dict inSection:(NSInteger)section
 {
     NSAssert( [self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
@@ -88,6 +103,7 @@
     NSAssert([self isValidJ2FJSON:dict], @"invalid J2FJSON format.");
     
     NSDictionary *fieldConfiguration = [self fieldsConfiguration:dict withIndexPath:indexPath];
+    NSString *identifier = [self fieldIdentifier:dict withIndexPath:indexPath];
     NSString *type = fieldConfiguration[kTypeField];
     NSString *caption = fieldConfiguration[kCaptionField];
     NSString *placeholder = fieldConfiguration[kPlaceHolderField];
@@ -96,6 +112,7 @@
 
     J2FField *field = (J2FField *)[J2FFieldFactory createWithString:type];
 
+    field.identifier = identifier;
     field.caption = caption;
     field.placeholder = placeholder;
     field.icon = icon;
@@ -116,6 +133,12 @@
 + (NSDictionary *)allRows:(NSDictionary *)dict fromSection:(NSInteger)section
 {
     NSArray *sections = [self sections:dict];
+    
+    if ([sections count] == 0)
+    {
+        return nil;
+    }
+    
     NSString *sectionTitle = sections[section];
     NSDictionary *rows = dict[sectionTitle];
 

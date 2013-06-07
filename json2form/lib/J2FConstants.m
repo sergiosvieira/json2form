@@ -9,7 +9,7 @@
 #import "J2FConstants.h"
 
 // app related constants
-NSString *const kDefaultCellIdentifier = @"DefaultCellIdentifier";
+NSString *const kJ2FDefaultCellIdentifier = @"DefaultCellIdentifier";
 
 // fields
 NSString *const kTypeField = @"type";
@@ -23,6 +23,7 @@ NSString *const kIconField = @"icon";
 // string fields type
 NSString *const kStrTextType = @"kTextType";
 NSString *const kStrDateType = @"kDateType";
+NSString *const kStrDateIconType = @"kDateIconType";
 NSString *const kStrSelectionType = @"kSelectionType";
 NSString *const kStrIconType = @"kIconType";
 NSString *const kStrButtonType = @"kSelectionType";

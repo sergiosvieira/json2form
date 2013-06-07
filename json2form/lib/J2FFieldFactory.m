@@ -12,7 +12,7 @@
 #import "DateField.h"
 #import "SelectionField.h"
 #import "IconField.h"
-
+#import "IconDateField.h"
 
 @implementation J2FFieldFactory
 
@@ -36,8 +36,12 @@
             return [[IconField alloc] init];
         break;
         
+        case kDateIconType:
+            return [[IconDateField alloc] init];
+        break;
+        
         default:
-            return [[TextField alloc] init];
+            return nil;
     }
 }
 
@@ -58,6 +62,10 @@
     else if ([type isEqualToString:kStrIconType])
     {
         return [self create:kIconType];
+    }
+    else if ([type isEqualToString:kStrDateIconType])
+    {
+        return [self create:kDateIconType];
     }
     
     return nil;

@@ -15,6 +15,7 @@
 - (void)configureCell:(UITableViewCell *)cell;
 
 @optional
+@property (strong, nonatomic) NSString *identifier;
 @property (strong, nonatomic) NSString *caption;
 @property (strong, nonatomic) NSString *placeholder;
 @property (strong, nonatomic) NSString *defaulValue;

@@ -16,7 +16,8 @@ typedef NS_ENUM(NSInteger, kFieldType)
     kTextIconType,
     kIconType,
     kButtonType,
-    kLabelType
+    kLabelType,
+    kDateIconType
 };
 
 
@@ -35,6 +36,7 @@ FOUNDATION_EXPORT NSString *const kIconField;
 // string fields type
 FOUNDATION_EXPORT NSString *const kStrTextType;
 FOUNDATION_EXPORT NSString *const kStrDateType;
+FOUNDATION_EXPORT NSString *const kStrDateIconType;
 FOUNDATION_EXPORT NSString *const kStrSelectionType;
 FOUNDATION_EXPORT NSString *const kStrIconType;
 

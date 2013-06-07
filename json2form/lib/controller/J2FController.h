@@ -34,5 +34,7 @@
 }
 
 - (void)setValue:(NSString *)value toIndexPath:(NSIndexPath *)indexPath;
+- (NSDictionary *)allValues;
+- (void)setValuesWithDict:(NSDictionary *)dict;
 
 @end
