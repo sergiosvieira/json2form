@@ -23,6 +23,16 @@
     return _results;
 }
 
+- (NSDictionary *)elements
+{
+    if (!_results)
+    {
+        _results = [J2FCoreData loadFromJSON:@"elements"];
+    }
+    
+    return _results;
+}
+
 - (NSArray *)sections
 {
     if (!_sections)

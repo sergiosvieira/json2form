@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) NSArray *sections;
 @property (strong, nonatomic) NSDictionary *results;
+@property (strong, elements) NSDictionary *elements;
 
 @end
 

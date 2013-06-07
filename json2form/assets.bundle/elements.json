@@ -1,0 +1,12 @@
+{
+    "Section 01": {
+        "button01": {
+            "type": "kButtonType",
+            "caption": "SAVE"
+        },
+        "status01": {
+            "type": "kLabelType",
+            "caption": "STATUS_LABEL"
+        }
+    }
+}

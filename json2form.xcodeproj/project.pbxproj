@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D44C6A51761C44E0066E6F7 /* J2FElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6A41761C44E0066E6F7 /* J2FElement.m */; };
+		0D44C6A81761C4AD0066E6F7 /* ButtonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6A71761C4AD0066E6F7 /* ButtonElement.m */; };
+		0D44C6AB1761C4C10066E6F7 /* LabelElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D44C6AA1761C4C10066E6F7 /* LabelElement.m */; };
 		0DE5311D17602B6B00B3B18E /* J2FMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE5311C17602B6A00B3B18E /* J2FMessages.m */; };
 		0DE531201760387300B3B18E /* J2FCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DE5311F1760387300B3B18E /* J2FCell.xib */; };
 		0DE53123176039E700B3B18E /* J2FCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE53122176039E700B3B18E /* J2FCell.m */; };
@@ -42,6 +45,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D44C6A31761C44E0066E6F7 /* J2FElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FElement.h; path = lib/J2FElement.h; sourceTree = "<group>"; };
+		0D44C6A41761C44E0066E6F7 /* J2FElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FElement.m; path = lib/J2FElement.m; sourceTree = "<group>"; };
+		0D44C6A61761C4AD0066E6F7 /* ButtonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ButtonElement.h; path = lib/controller/element/ButtonElement.h; sourceTree = "<group>"; };
+		0D44C6A71761C4AD0066E6F7 /* ButtonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ButtonElement.m; path = lib/controller/element/ButtonElement.m; sourceTree = "<group>"; };
+		0D44C6A91761C4C10066E6F7 /* LabelElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LabelElement.h; path = lib/controller/element/LabelElement.h; sourceTree = "<group>"; };
+		0D44C6AA1761C4C10066E6F7 /* LabelElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LabelElement.m; path = lib/controller/element/LabelElement.m; sourceTree = "<group>"; };
 		0DE5311A176026B600B3B18E /* J2F.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = J2F.h; path = lib/J2F.h; sourceTree = "<group>"; };
 		0DE5311B17602B6A00B3B18E /* J2FMessages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = J2FMessages.h; path = lib/J2FMessages.h; sourceTree = "<group>"; };
 		0DE5311C17602B6A00B3B18E /* J2FMessages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = J2FMessages.m; path = lib/J2FMessages.m; sourceTree = "<group>"; };
@@ -111,6 +120,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D44C6A21761C42C0066E6F7 /* element */ = {
+			isa = PBXGroup;
+			children = (
+				0D44C6A61761C4AD0066E6F7 /* ButtonElement.h */,
+				0D44C6A71761C4AD0066E6F7 /* ButtonElement.m */,
+				0D44C6A91761C4C10066E6F7 /* LabelElement.h */,
+				0D44C6AA1761C4C10066E6F7 /* LabelElement.m */,
+			);
+			name = element;
+			sourceTree = "<group>";
+		};
 		0DE5311E176037E600B3B18E /* nib */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +244,8 @@
 				3A30AA1C175FE68400C1CD98 /* J2FConstants.m */,
 				3A30AA10175FD63600C1CD98 /* J2FCoreData.h */,
 				3A30AA11175FD63600C1CD98 /* J2FCoreData.m */,
+				0D44C6A31761C44E0066E6F7 /* J2FElement.h */,
+				0D44C6A41761C44E0066E6F7 /* J2FElement.m */,
 				0DE531281760414600B3B18E /* J2FField.h */,
 				0DE531291760414600B3B18E /* J2FField.m */,
 				3A18A4AD1760BE3A00546209 /* J2FFieldFactory.h */,
@@ -257,6 +279,7 @@
 		3A30AA05175FCCF200C1CD98 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0D44C6A21761C42C0066E6F7 /* element */,
 				0DE5312B1760423300B3B18E /* field */,
 				3A30AA06175FCD6400C1CD98 /* J2FController.h */,
 				3A30AA07175FCD6400C1CD98 /* J2FController.m */,
@@ -373,6 +396,9 @@
 				3A18A4B51760D0FB00546209 /* DateField.m in Sources */,
 				3A18A4B81760D11E00546209 /* SelectionField.m in Sources */,
 				3A18A4BB1760D14900546209 /* IconField.m in Sources */,
+				0D44C6A51761C44E0066E6F7 /* J2FElement.m in Sources */,
+				0D44C6A81761C4AD0066E6F7 /* ButtonElement.m in Sources */,
+				0D44C6AB1761C4C10066E6F7 /* LabelElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
