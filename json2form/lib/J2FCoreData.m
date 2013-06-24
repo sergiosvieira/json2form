@@ -65,7 +65,22 @@
     
     NSDictionary *rows = [self allRows:dict fromSection:section];
     
-    return rows.allKeys;
+    NSArray *sortedArray;
+     
+    sortedArray = [rows.allKeys sortedArrayUsingComparator:^NSComparisonResult(NSString *a, NSString *b) {
+        NSDictionary *dfirst = rows[a];
+        NSDictionary *dsecond = rows[b];
+        NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
+
+        [f setNumberStyle:NSNumberFormatterDecimalStyle];
+
+        NSNumber *first = [f numberFromString:dfirst[@"order"]];
+        NSNumber *second = [f numberFromString:dsecond[@"order"]];
+
+        return [first compare:second];
+    }];    
+    
+    return sortedArray;
 }
 
 + (NSDictionary *)fieldsConfiguration:(NSDictionary *)dict withIndexPath:(NSIndexPath *)indexPath

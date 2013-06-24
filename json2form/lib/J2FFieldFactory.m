@@ -13,6 +13,9 @@
 #import "SelectionField.h"
 #import "IconField.h"
 #import "IconDateField.h"
+#import "IconSelectionField.h"
+#import "IconButton.h"
+
 
 @implementation J2FFieldFactory
 
@@ -40,6 +43,14 @@
             return [[IconDateField alloc] init];
         break;
         
+        case kSelectionIconType:
+            return [[IconSelectionField alloc] init];
+        break;
+        
+        case kIconButtonType:
+            return [[IconButton alloc] init];
+        break;
+            
         default:
             return nil;
     }
@@ -66,6 +77,14 @@
     else if ([type isEqualToString:kStrDateIconType])
     {
         return [self create:kDateIconType];
+    }
+    else if ([type isEqualToString:kStrSelectionIconType])
+    {
+        return [self create:kSelectionIconType];
+    }
+    else if ([type isEqualToString:kStrIconButtonType])
+    {
+        return [self create:kIconButtonType];
     }
     
     return nil;

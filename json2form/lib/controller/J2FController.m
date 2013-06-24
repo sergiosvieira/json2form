@@ -175,7 +175,10 @@
     
     for (J2FField *field in temporaryFieldsList.allValues)
     {
-        result[field.identifier] = field.currentValue;
+        if (field.identifier && field.currentValue)
+        {
+            result[field.identifier] = field.currentValue;
+        }
     }
     
     return result;

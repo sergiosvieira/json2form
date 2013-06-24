@@ -26,5 +26,8 @@ NSString *const kStrDateType = @"kDateType";
 NSString *const kStrDateIconType = @"kDateIconType";
 NSString *const kStrSelectionType = @"kSelectionType";
 NSString *const kStrIconType = @"kIconType";
-NSString *const kStrButtonType = @"kSelectionType";
-NSString *const kStrLabelType = @"kIconType";
+NSString *const kStrIconButtonType = @"kIconButtonType";
+NSString *const kStrButtonType = @"kButtonType";
+NSString *const kStrLabelType = @"kLabelType";
+NSString *const kStrSelectionIconType = @"kSelectionIconType";
+

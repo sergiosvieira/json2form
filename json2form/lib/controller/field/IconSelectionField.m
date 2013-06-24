@@ -1,28 +1,27 @@
 //
-//  IconDateField.m
+//  IconSelectionField.m
 //  Weelo
 //
-//  Created by Paulo Pinheiro on 6/7/13.
+//  Created by Sérgio Vieira on 6/11/13.
 //  Copyright (c) 2013 sergio vieira. All rights reserved.
 //
 
-#import "IconDateField.h"
+#import "IconSelectionField.h"
+
 #import "J2FCell.h"
 
 
-@implementation IconDateField
+@implementation IconSelectionField
 
-#pragma mark - J2FFieldProtocol
 - (void)configureCell:(UITableViewCell *)cell
 {
     [super configureCell:cell];
-
-    UIImage *image = [UIImage imageNamed:self.icon];
+    
     J2FCell *ccell = (J2FCell *)cell;
+    UIImage *image = [UIImage imageNamed:self.icon];
 
     [ccell.icon setImage:image];
 }
 
-#pragma mark - Selectors
 
 @end

@@ -17,7 +17,9 @@ typedef NS_ENUM(NSInteger, kFieldType)
     kIconType,
     kButtonType,
     kLabelType,
-    kDateIconType
+    kDateIconType,
+    kSelectionIconType,
+    kIconButtonType
 };
 
 
@@ -32,6 +34,7 @@ FOUNDATION_EXPORT NSString *const kDefaultValueField;
 FOUNDATION_EXPORT NSString *const kKeyBoardStyleField;
 FOUNDATION_EXPORT NSString *const kValuesField;
 FOUNDATION_EXPORT NSString *const kIconField;
+FOUNDATION_EXPORT NSString *const kStrSelectionIconType;
 
 // string fields type
 FOUNDATION_EXPORT NSString *const kStrTextType;
@@ -39,6 +42,7 @@ FOUNDATION_EXPORT NSString *const kStrDateType;
 FOUNDATION_EXPORT NSString *const kStrDateIconType;
 FOUNDATION_EXPORT NSString *const kStrSelectionType;
 FOUNDATION_EXPORT NSString *const kStrIconType;
+FOUNDATION_EXPORT NSString *const kStrIconButtonType;
 
 static const CGFloat kJ2FDefaultSectionHeight = 44.f;
 static const CGFloat kJ2FDefaultFooterPadding = 10.f;
