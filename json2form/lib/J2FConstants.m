@@ -19,6 +19,7 @@ NSString *const kDefaultValueField = @"defaultvalue";
 NSString *const kKeyBoardStyleField = @"keyboardstyle";
 NSString *const kValuesField = @"values";
 NSString *const kIconField = @"icon";
+NSString *const kTextTypeField = @"texttype";
 
 // string fields type
 NSString *const kStrTextType = @"kTextType";

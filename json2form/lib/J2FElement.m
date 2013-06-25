@@ -20,4 +20,8 @@
     return kJ2FDefaultFooterPadding;
 }
 
+- (void)setValue:(id)aValue
+{
+}
+
 @end

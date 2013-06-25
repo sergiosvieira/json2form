@@ -14,6 +14,7 @@
 @optional
 - (id)viewWithCaption:(NSString *)caption;
 - (CGFloat)height;
+- (void)setValue:(id)aValue;
 
 @end
 

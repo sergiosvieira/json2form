@@ -27,6 +27,14 @@
     if (self)
     {
         self.parent = parent;
+        
+        if (![UIApplication sharedApplication].statusBarHidden)
+        {
+            CGRect frame = self.tableView.frame;
+            
+            frame.origin.y = 0;
+            self.tableView.frame = frame;
+        }
     }
     
     return self;
@@ -42,14 +50,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    /** customizing **/
-    
-    self.tableView.layer.shadowColor = [UIColor darkGrayColor].CGColor;
-    self.tableView.layer.shadowOffset = CGSizeMake(1.0f, 1.0f);
-    self.tableView.layer.shadowOpacity = 0.4;
-    self.tableView.layer.shadowRadius = 5.0f;
-    self.tableView.clipsToBounds = NO;
-    self.tableView.layer.masksToBounds = NO;
 }
 
 - (void)didReceiveMemoryWarning

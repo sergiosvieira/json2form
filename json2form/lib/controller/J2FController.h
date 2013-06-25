@@ -31,11 +31,15 @@
 {
     NSMutableDictionary *temporaryFieldsList;
     NSMutableDictionary *temporaryElementViewList;
+    NSMutableDictionary *temporaryElementList;
 }
 
 - (void)setValue:(NSString *)value toIndexPath:(NSIndexPath *)indexPath;
+- (void)setElementValue:(NSString *)aValue toElementCaption:(NSString *)anCaption;
 - (NSDictionary *)allValues;
 - (void)setValuesWithDict:(NSDictionary *)dict;
 - (void)loading;
+
+@property (assign, nonatomic, getter = isHideSectionTitle) BOOL hideSectionTitle;
 
 @end

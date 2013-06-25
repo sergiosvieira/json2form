@@ -23,9 +23,13 @@
 @property (strong, nonatomic) NSArray *values;
 @property (strong, nonatomic) NSString *icon;
 @property (strong, nonatomic) NSString *currentValue;
+@property (strong, nonatomic) NSString *textType;
 
 @end
 
 @interface J2FField : NSObject<J2FFieldProtocol, UITextFieldDelegate>
+
+@property (assign, nonatomic, getter = isPassword) BOOL password;
+
 
 @end

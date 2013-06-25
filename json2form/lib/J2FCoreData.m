@@ -124,6 +124,7 @@
     NSString *placeholder = fieldConfiguration[kPlaceHolderField];
     NSString *icon = fieldConfiguration[kIconField];
     NSArray *values = fieldConfiguration[kValuesField];
+    NSString *textType = fieldConfiguration[kTextTypeField];
 
     J2FField *field = (J2FField *)[J2FFieldFactory createWithString:type];
 
@@ -132,6 +133,12 @@
     field.placeholder = placeholder;
     field.icon = icon;
     field.values = values;
+    field.textType = textType;
+    
+    if ([textType isEqualToString:@"password"])
+    {
+        field.password = YES;
+    }
     
     return field;
 }

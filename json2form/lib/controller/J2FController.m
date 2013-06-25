@@ -29,6 +29,11 @@
     [self loading];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.view endEditing:YES];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -127,7 +132,9 @@
 
 - (NSString *)titleForHeaderInSection:(NSInteger)section
 {
-    return self.model.sections[section];
+    NSString *title = self.isHideSectionTitle ? @"" : self.model.sections[section];
+
+    return title;
 }
 
 - (UIView *)viewForFooterInSection:(NSInteger)section
@@ -139,17 +146,26 @@
         NSInteger footerHeight = 0;
         NSDictionary *rows = [J2FCoreData allFieldsConfiguration:self.model.elements inSection:section];
         NSArray *allValues = rows.allValues;
+        NSArray *allKeys = rows.allKeys;
         
-        for (NSDictionary *dict in allValues)
+        for (int index = 0; index < [allKeys count]; index++)
         {
+            NSDictionary *dict = allValues[index];
             NSString *caption = dict[kCaptionField];
             NSString *type = dict[kTypeField];
             J2FElement *element = [J2FElementFactory createWithString:type];
-            
+
             sectionView = [[UIView alloc] init];
-            [sectionView addSubview:[element viewWithCaption:caption]];
+
+            id genericElement = [element viewWithCaption:caption];
+            
+            [sectionView addSubview:genericElement];
             footerHeight += [element height];
             temporaryElementViewList[@(section)] = sectionView;
+            
+            NSString *title = allKeys[index];
+            
+            temporaryElementList[title] = element;
         }
         
         CGRect frame = sectionView.frame;
@@ -167,6 +183,13 @@
     J2FField *field = temporaryFieldsList[indexPath];
     
     field.currentValue = value;
+}
+
+- (void)setElementValue:(NSString *)aValue toElementCaption:(NSString *)anCaption
+{
+    J2FElement *element = temporaryElementList[anCaption];
+    
+    [element setValue:aValue];
 }
 
 - (NSDictionary *)allValues
@@ -207,6 +230,7 @@
     [self.view addSubview:self.tableController.view];
     temporaryFieldsList = [[NSMutableDictionary alloc] init];
     temporaryElementViewList = [[NSMutableDictionary alloc] init];
+    temporaryElementList = [[NSMutableDictionary alloc] init];
 }
 
 @end

@@ -40,6 +40,16 @@
     results = array;
     self.picker.delegate = self;
     self.picker.dataSource = self;
+    
+    /** customizing **/
+    CGRect iconFrame = ccell.icon.frame;
+    CGRect textFrame = ccell.textField.frame;
+
+    iconFrame.origin = CGPointMake(5.f, 0.f);
+    ccell.icon.frame = iconFrame;
+
+    textFrame.origin.x = 50.f;
+    ccell.textField.frame = textFrame;
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component

@@ -12,7 +12,7 @@
 @implementation J2FField
 
 @synthesize identifier = _identifier, caption = _caption, placeholder =_placeholder, defaulValue = _defaulValue, keyboardType = _keyboardType,
-    values = _values, icon = _icon, currentValue = _currentValue;
+    values = _values, icon = _icon, currentValue = _currentValue, textType = _textType;
 
 - (NSString *)caption
 {

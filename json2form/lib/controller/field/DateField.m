@@ -36,6 +36,16 @@
     ccell.textField.text =  self.currentValue ? self.currentValue : self.defaulValue;
     ccell.textField.inputView = self.datePicker;
     ccell.textField.delegate = self;
+    
+    /** customizing **/
+    CGRect iconFrame = ccell.icon.frame;
+    CGRect textFrame = ccell.textField.frame;
+
+    iconFrame.origin = CGPointMake(5.f, 0.f);
+    ccell.icon.frame = iconFrame;
+
+    textFrame.origin.x = 50.f;
+    ccell.textField.frame = textFrame;    
 }
 
 #pragma mark - Selectors

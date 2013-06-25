@@ -32,21 +32,13 @@
 
 + (id<J2FElementProtocol>)createWithString:(NSString *)type
 {
-    if ([type isEqualToString:kStrTextType])
+    if ([type isEqualToString:kStrButtonType])
     {
-        return [self create:kTextType];
+        return [self create:kButtonType];
     }
-    else if ([type isEqualToString:kStrDateType])
+    else if ([type isEqualToString:kStrLabelType])
     {
-        return [self create:kDateType];
-    }
-    else if ([type isEqualToString:kStrSelectionType])
-    {
-        return [self create:kSelectionType];
-    }
-    else if ([type isEqualToString:kStrIconType])
-    {
-        return [self create:kIconType];
+        return [self create:kLabelType];
     }
     
     return nil;
