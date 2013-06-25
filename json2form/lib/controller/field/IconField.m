@@ -14,8 +14,6 @@
 
 - (void)configureCell:(UITableViewCell *)cell
 {
-    NSLog(@"--> %@", self.identifier);
-
     J2FCell *ccell = (J2FCell *)cell;
     UIImage *image = [UIImage imageNamed:self.icon];
     
