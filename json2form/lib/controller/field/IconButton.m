@@ -35,6 +35,7 @@
     frame.origin.x = 5.f;
     frame.origin.y = 0.f;
     ccell.icon.frame = frame;
+    [super configureCell:cell];
 }
 
 @end

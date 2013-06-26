@@ -8,6 +8,7 @@
 
 #import "J2FField.h"
 
+#import "J2FCell.h"
 
 @implementation J2FField
 
@@ -21,6 +22,13 @@
 
 - (void)configureCell:(UITableViewCell *)cell
 {
+    /** customizing **/
+    J2FCell *ccell = (J2FCell *)cell;
+    
+    CGRect frame = ccell.icon.frame;
+    
+    frame.origin = CGPointMake(15.f, 12.f);
+    ccell.icon.frame = frame;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField

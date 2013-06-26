@@ -21,6 +21,7 @@
     UIImage *image = [UIImage imageNamed:self.icon];
 
     [ccell.icon setImage:image];
+    [super configureCell:cell];
 }
 
 

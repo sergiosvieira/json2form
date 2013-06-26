@@ -37,6 +37,8 @@
     {
         ccell.textField.secureTextEntry = YES;
     }
+    
+    [super configureCell:cell];
 }
 
 @end

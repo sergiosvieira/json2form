@@ -45,7 +45,9 @@
     ccell.icon.frame = iconFrame;
 
     textFrame.origin.x = 50.f;
-    ccell.textField.frame = textFrame;    
+    ccell.textField.frame = textFrame;
+    
+    [super configureCell:cell];
 }
 
 #pragma mark - Selectors

@@ -50,6 +50,7 @@
 
     textFrame.origin.x = 50.f;
     ccell.textField.frame = textFrame;
+    [super configureCell:cell];
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component

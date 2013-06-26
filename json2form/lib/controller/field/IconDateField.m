@@ -21,6 +21,7 @@
     J2FCell *ccell = (J2FCell *)cell;
 
     [ccell.icon setImage:image];
+    [super configureCell:cell];
 }
 
 #pragma mark - Selectors
